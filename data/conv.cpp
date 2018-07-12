@@ -54,11 +54,11 @@ int main()
 
     ofstream out_file;
     out_file.open("higgs_small.txt");
-    for (int i = 0; i < 27; i++)
+    for (int i = 0; i < 28; i++)
     {
         out_file << var_names[i] << ",";
     }
-    out_file << var_names[27] << "\n";
+    out_file << "label\n";
 
     for (int iEntry = 0; iEntry < nEntriesS / 100; iEntry++)
     {
